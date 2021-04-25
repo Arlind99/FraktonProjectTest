@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Retrofi2</string>
+    <string name="app_name">FraktonProjectTest</string>
+    <string name="btn_preview">&lt;</string>
+    <string name="btn_next">&gt;</string>
 </resources>

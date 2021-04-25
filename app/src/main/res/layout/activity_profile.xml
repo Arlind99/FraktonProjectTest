@@ -6,15 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".activity.Profile">
 
-    <ImageView
-        android:id="@+id/imgProfile"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/aaa" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:text="1"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnPreview"
+        android:layout_width="50dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/btn_preview"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/next_preview_button_background"
+        app:layout_constraintTop_toTopOf="@+id/imgProfile"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfile"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <com.example.FraktonProjectTest.View.PhotoView
+        android:id="@+id/imgProfile"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtID"
+        app:layout_constraintStart_toStartOf="@+id/txtID"
+        app:layout_constraintTop_toTopOf="@+id/txtID" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="50dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/btn_next"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/next_preview_button_background"
+        app:layout_constraintTop_toTopOf="@+id/imgProfile"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfile"
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <TextView
         android:id="@+id/txtNameSurname"
@@ -22,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Name and Surname"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#000"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,9 +75,9 @@
         android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:text="Email"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNameSurname" />
