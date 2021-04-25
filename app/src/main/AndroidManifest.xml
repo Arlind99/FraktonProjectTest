@@ -11,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.FraktonProjectTest.activity.CreateActivity"></activity>
-        <activity android:name="com.example.FraktonProjectTest.activity.Profile"
+        <activity android:name="com.example.FraktonProjectTest.activity.ProfileActivity"
             android:parentActivityName="com.example.FraktonProjectTest.activity.MainActivity"/>
         <activity android:name="com.example.FraktonProjectTest.activity.MainActivity">
             <intent-filter>

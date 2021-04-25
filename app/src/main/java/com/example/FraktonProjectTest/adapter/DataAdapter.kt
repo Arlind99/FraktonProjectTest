@@ -12,7 +12,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.FraktonProjectTest.R
-import com.example.FraktonProjectTest.activity.Profile
+import com.example.FraktonProjectTest.activity.ProfileActivity
 import com.example.FraktonProjectTest.model.Data
 
 class DataAdapter(private var data: ArrayList<Data>, private var context: Context): RecyclerView.Adapter<DataAdapter.ViewHolder>() {
@@ -51,7 +51,7 @@ class DataAdapter(private var data: ArrayList<Data>, private var context: Contex
             holder.layout?.setBackgroundColor(Color.parseColor("#ffffff"))
         }
         holder.layout?.setOnClickListener {
-            var intent = Intent(context, Profile::class.java)
+            var intent = Intent(context, ProfileActivity::class.java)
 //            var number = DataInterface.getPositon(position)
             intent.putExtra("id", id)
             intent.putExtra("size", data.size)

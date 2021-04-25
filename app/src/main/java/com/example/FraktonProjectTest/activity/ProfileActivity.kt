@@ -13,9 +13,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class Profile : AppCompatActivity() {
+class ProfileActivity : AppCompatActivity() {
 
-    private val TAG = "Profile"
+    private val TAG = "ProfileActivity"
     private var url = 0
     private var dataSize = 0
 
@@ -55,7 +55,7 @@ class Profile : AppCompatActivity() {
                     txtID.text = profile?.id.toString()
                     txtNameSurname.text = profile?.first_name + " " + profile?.last_name
                     txtEmail.setText(profile?.email)
-                    Glide.with(this@Profile)
+                    Glide.with(this@ProfileActivity)
                         .load(profile?.avatar)
                         .into(imgProfile)
                 }

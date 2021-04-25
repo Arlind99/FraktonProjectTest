@@ -41,11 +41,6 @@ class MainActivity : AppCompatActivity() {
 
         getData()
 
-        txtCreateUser.setOnClickListener {
-            val intent = Intent(this,CreateActivity::class.java)
-            startActivity(intent)
-        }
-
     }
 
     fun getData(){
